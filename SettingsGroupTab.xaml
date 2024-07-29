@@ -1,0 +1,118 @@
+<TabItem x:Class="SettingsManager.SettingsGroupTab"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:SettingsManager"
+             mc:Ignorable="d" BorderThickness="0">
+    <TabItem.Resources>
+        <Style TargetType="Button">
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#324566"/>
+                </Trigger>
+
+                <Trigger Property="IsPressed" Value="True">
+                    <Setter Property="Background" Value="#0A0D14"/>
+                </Trigger>
+
+                <Trigger Property="IsEnabled" Value="False">
+                    <Setter Property="Opacity" Value=".5"/>
+                </Trigger>
+            </Style.Triggers>
+
+            <Setter Property="Background" Value="#151D2B"/>
+
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border Background="{TemplateBinding Background}" BorderBrush="#AB88FD" BorderThickness="2">
+                            <ContentPresenter />
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style TargetType="TextBlock">
+            <Setter Property="Foreground" Value="#98CDE0"/>
+        </Style>
+
+        <Style x:Key="ValueInfo" TargetType="TextBlock" BasedOn="{StaticResource {x:Type TextBlock}}">
+            <Setter Property="VerticalAlignment" Value="Center" />
+            <Setter Property="FontSize" Value="18" />
+            <Setter Property="FontFamily" Value="{StaticResource QuadratGrotesk}"/>
+        </Style>
+    </TabItem.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Separator Grid.Row="0"/>
+
+        <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Hidden">
+            <StackPanel Name="SettingsContainer" Orientation="Vertical">
+                <StackPanel.Resources>
+                    <Style TargetType="local:Setting">
+                        <Setter Property="Margin" Value="0, 0, 0, 15"/>
+                    </Style>
+                </StackPanel.Resources>
+            </StackPanel>
+        </ScrollViewer>
+
+        <Separator Grid.Row="2"/>
+
+        <Grid Grid.Row="3" Margin="25, 0" Width="500">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <Button Grid.Row="0" Name="MoveToRTXButton" Click="MoveToRTX" IsEnabled="False">
+                <DockPanel LastChildFill="True">
+                    <Viewbox Width="24" Height="24" Margin="0, 1" DockPanel.Dock="Right">
+                        <Viewbox.LayoutTransform>
+                            <RotateTransform Angle="180"/>
+                        </Viewbox.LayoutTransform>
+
+                        <Viewbox.RenderTransform>
+                            <TranslateTransform X="2" Y="1"/>
+                        </Viewbox.RenderTransform>
+
+                        <Path Fill="#5F8ED7" Data="m4.431 12.822 13 9A1 1 0 0 0 19 21V3a1 1 0 0 0-1.569-.823l-13 9a1.003 1.003 0 0 0 0 1.645z"/>
+                    </Viewbox>
+
+                    <TextBlock Padding="26, 0, 0, 0" FontSize="16" HorizontalAlignment="Center" Style="{StaticResource ValueInfo}">
+                        <Run local:LocalizationProvider.Path="MoveTab"/>
+                        <Run Text="Revive TX"/>
+                    </TextBlock>
+                </DockPanel>
+            </Button>
+
+            <Separator Grid.Row="1" VerticalAlignment="Center" Width="0"/>
+
+            <Button Grid.Row="2" Name="MoveToVintButton" Click="MoveToVint" IsEnabled="False">
+                <DockPanel LastChildFill="True">
+                    <Viewbox Width="24" Height="24" Margin="0, 1" DockPanel.Dock="Left">
+                        <Viewbox.RenderTransform>
+                            <TranslateTransform X="-2" Y="-1"/>
+                        </Viewbox.RenderTransform>
+
+                        <Path Fill="#5F8ED7" Data="m4.431 12.822 13 9A1 1 0 0 0 19 21V3a1 1 0 0 0-1.569-.823l-13 9a1.003 1.003 0 0 0 0 1.645z"/>
+                    </Viewbox>
+
+                    <TextBlock Padding="0, 0, 26, 0" FontSize="16" HorizontalAlignment="Center" Style="{StaticResource ValueInfo}">
+                        <Run local:LocalizationProvider.Path="MoveTab"/>
+                        <Run Text="Vint"/>
+                    </TextBlock>
+                </DockPanel>
+            </Button>
+        </Grid>
+    </Grid>
+</TabItem>

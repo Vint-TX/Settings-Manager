@@ -1,0 +1,429 @@
+[
+  {
+    "nameWithoutHash": "locale",
+    "localizationKey": "Locale",
+    "group": "Language",
+    "valueConverter": {
+      "$type": "SettingsManager.Converters.StringValueConverter, SettingsManager"
+    }
+  },
+  {
+    "nameWithoutHash": "SFX_VOLUME",
+    "localizationKey": "SoundEffects",
+    "group": "Sound",
+    "valueConverter": {
+      "$type": "SettingsManager.Converters.FloatValueConverter, SettingsManager"
+    }
+  },
+  {
+    "nameWithoutHash": "SFX_MUTED",
+    "localizationKey": "SoundEffects_Muted",
+    "group": "Sound",
+    "valueConverter": {
+      "$type": "SettingsManager.Converters.BooleanValueConverter, SettingsManager",
+      "trueLocalizationKey": "Yes",
+      "falseLocalizationKey": "No"
+    }
+  },
+  {
+    "nameWithoutHash": "MUSIC_VOLUME",
+    "localizationKey": "Music",
+    "group": "Sound",
+    "valueConverter": {
+      "$type": "SettingsManager.Converters.FloatValueConverter, SettingsManager"
+    }
+  },
+  {
+    "nameWithoutHash": "MUSIC_MUTED",
+    "localizationKey": "Music_Muted",
+    "group": "Sound",
+    "valueConverter": {
+      "$type": "SettingsManager.Converters.BooleanValueConverter, SettingsManager",
+      "trueLocalizationKey": "Yes",
+      "falseLocalizationKey": "No"
+    }
+  },
+  {
+    "nameWithoutHash": "UI_VOLUME",
+    "localizationKey": "UI",
+    "group": "Sound",
+    "valueConverter": {
+      "$type": "SettingsManager.Converters.FloatValueConverter, SettingsManager"
+    }
+  },
+  {
+    "nameWithoutHash": "UI_MUTED",
+    "localizationKey": "UI_Muted",
+    "group": "Sound",
+    "valueConverter": {
+      "$type": "SettingsManager.Converters.BooleanValueConverter, SettingsManager",
+      "trueLocalizationKey": "Yes",
+      "falseLocalizationKey": "No"
+    }
+  },
+  {
+    "nameWithoutHash": "CAMERA_SHAKER_ENABLED",
+    "localizationKey": "CameraShaker",
+    "group": "Game",
+    "valueConverter": {
+      "$type": "SettingsManager.Converters.BooleanValueConverter, SettingsManager",
+      "trueLocalizationKey": "Enabled",
+      "falseLocalizationKey": "Disabled"
+    }
+  },
+  {
+    "nameWithoutHash": "DAMAGE_INFO_ENABLED",
+    "localizationKey": "DamageInfo",
+    "group": "Game",
+    "valueConverter": {
+      "$type": "SettingsManager.Converters.BooleanValueConverter, SettingsManager",
+      "trueLocalizationKey": "Enabled",
+      "falseLocalizationKey": "Disabled"
+    }
+  },
+  {
+    "nameWithoutHash": "TARGET_FOCUS_ENABLED",
+    "localizationKey": "TargetFocus",
+    "group": "Game",
+    "valueConverter": {
+      "$type": "SettingsManager.Converters.BooleanValueConverter, SettingsManager",
+      "trueLocalizationKey": "Enabled",
+      "falseLocalizationKey": "Disabled"
+    },
+    "tipLocalizationKey": "TargetFocusTip"
+  },
+  {
+    "nameWithoutHash": "LASER_SIGHT_ENABLED",
+    "localizationKey": "LaserSight",
+    "group": "Game",
+    "valueConverter": {
+      "$type": "SettingsManager.Converters.BooleanValueConverter, SettingsManager",
+      "trueLocalizationKey": "Enabled",
+      "falseLocalizationKey": "Disabled"
+    }
+  },
+  {
+    "nameWithoutHash": "LOW_HEALTH_FEEDBACK_ENABLED",
+    "localizationKey": "LowHealthFeedback",
+    "group": "Game",
+    "valueConverter": {
+      "$type": "SettingsManager.Converters.BooleanValueConverter, SettingsManager",
+      "trueLocalizationKey": "Enabled",
+      "falseLocalizationKey": "Disabled"
+    },
+    "tipLocalizationKey": "LowHealthFeedbackTip"
+  },
+  {
+    "nameWithoutHash": "SELF_TARGET_HIT_FEEDBACK_ENABLED",
+    "localizationKey": "SelfTargetHitFeedback",
+    "group": "Game",
+    "valueConverter": {
+      "$type": "SettingsManager.Converters.BooleanValueConverter, SettingsManager",
+      "trueLocalizationKey": "Enabled",
+      "falseLocalizationKey": "Disabled"
+    },
+    "tipLocalizationKey": "SelfTargetHitFeedbackTip"
+  },
+  {
+    "nameWithoutHash": "DISABLED_BATTLED_NOTIFICATIONS",
+    "localizationKey": "DisableNotifications",
+    "group": "Game",
+    "valueConverter": {
+      "$type": "SettingsManager.Converters.BooleanValueConverter, SettingsManager",
+      "trueLocalizationKey": "Disabled",
+      "falseLocalizationKey": "Enabled"
+    },
+    "tipLocalizationKey": "DisableNotificationsTip"
+  },
+  {
+    "nameWithoutHash": "Screenmanager Is Fullscreen mode",
+    "localizationKey": "WindowMode",
+    "group": "Graphics",
+    "valueConverter": {
+      "$type": "SettingsManager.Converters.DictionaryValueConverter, SettingsManager",
+      "variants": {
+        "0": "Windowed",
+        "1": "Fullscreen"
+      }
+    }
+  },
+  {
+    "nameWithoutHash": "SCREEN_RESOLUTION_WIDTH",
+    "localizationKey": "Width",
+    "group": "Graphics",
+    "valueConverter": {
+      "$type": "SettingsManager.Converters.SimpleValueConverter, SettingsManager"
+    },
+    "dependencies": [
+      "SCREEN_RESOLUTION_HEIGHT"
+    ]
+  },
+  {
+    "nameWithoutHash": "SCREEN_RESOLUTION_HEIGHT",
+    "localizationKey": "Height",
+    "group": "Graphics",
+    "valueConverter": {
+      "$type": "SettingsManager.Converters.SimpleValueConverter, SettingsManager"
+    },
+    "dependencies": [
+      "SCREEN_RESOLUTION_WIDTH"
+    ]
+  },
+  {
+    "nameWithoutHash": "QUALITY_LEVEL_INDEX",
+    "localizationKey": "QualityLevel",
+    "group": "Graphics",
+    "valueConverter": {
+      "$type": "SettingsManager.Converters.DictionaryValueConverter, SettingsManager",
+      "variants": {
+        "0": "Minimum",
+        "1": "Low",
+        "2": "Medium",
+        "3": "High",
+        "4": "Maximum",
+        "5": "Ultra"
+      }
+    }
+  },
+  {
+    "nameWithoutHash": "SATURATION_LEVEL",
+    "localizationKey": "SaturationLevel",
+    "group": "Graphics",
+    "valueConverter": {
+      "$type": "SettingsManager.Converters.DictionaryValueConverter, SettingsManager",
+      "innerConverter": {
+        "$type": "SettingsManager.Converters.FloatValueConverter, SettingsManager"
+      },
+      "fallbackOnNotFound": true,
+      "variants": {
+        "0.4": "VeryLow",
+        "0.8": "Low",
+        "1": "Normal"
+      }
+    }
+  },
+  {
+    "nameWithoutHash": "RENDER_RESOLUTION_QUALITY",
+    "localizationKey": "RenderResolutionQuality",
+    "group": "Graphics",
+    "valueConverter": {
+      "$type": "SettingsManager.Converters.BooleanValueConverter, SettingsManager",
+      "trueLocalizationKey": "Enabled",
+      "falseLocalizationKey": "Disabled"
+    }
+  },
+  {
+    "nameWithoutHash": "TEXTURE_LEVEL",
+    "localizationKey": "TextureQuality",
+    "group": "Graphics",
+    "valueConverter": {
+      "$type": "SettingsManager.Converters.DictionaryValueConverter, SettingsManager",
+      "variants": {
+        "0": "Normal2",
+        "1": "High2"
+      }
+    }
+  },
+  {
+    "nameWithoutHash": "SHADOW_LEVEL",
+    "localizationKey": "ShadowQuality",
+    "group": "Graphics",
+    "valueConverter": {
+      "$type": "SettingsManager.Converters.DictionaryValueConverter, SettingsManager",
+      "variants": {
+        "0": "Off",
+        "1": "Minimum",
+        "2": "Normal",
+        "3": "High",
+        "4": "Ultra"
+      }
+    }
+  },
+  {
+    "nameWithoutHash": "PARTICLE_LEVEL",
+    "localizationKey": "ParticleQuality",
+    "group": "Graphics",
+    "valueConverter": {
+      "$type": "SettingsManager.Converters.DictionaryValueConverter, SettingsManager",
+      "variants": {
+        "0": "Minimum",
+        "1": "Low",
+        "2": "Medium",
+        "3": "High",
+        "4": "Maximum",
+        "5": "Ultra"
+      }
+    }
+  },
+  {
+    "nameWithoutHash": "VEGETATION_LEVEL_INDEX",
+    "localizationKey": "VegetationQuality",
+    "group": "Graphics",
+    "valueConverter": {
+      "$type": "SettingsManager.Converters.DictionaryValueConverter, SettingsManager",
+      "variants": {
+        "0": "Minimum",
+        "1": "Medium",
+        "2": "High",
+        "3": "Maximum",
+        "4": "Ultra"
+      }
+    }
+  },
+  {
+    "nameWithoutHash": "GRASS_LEVEL_INDEX",
+    "localizationKey": "GrassQuality",
+    "group": "Graphics",
+    "valueConverter": {
+      "$type": "SettingsManager.Converters.DictionaryValueConverter, SettingsManager",
+      "variants": {
+        "0": "Minimum",
+        "1": "Medium",
+        "2": "High",
+        "3": "Maximum",
+        "4": "Ultra"
+      }
+    }
+  },
+  {
+    "nameWithoutHash": "ANTIALIASING_LEVEL",
+    "localizationKey": "AntialiasingQuality",
+    "group": "Graphics",
+    "valueConverter": {
+      "$type": "SettingsManager.Converters.BooleanValueConverter, SettingsManager",
+      "trueLocalizationKey": "On",
+      "falseLocalizationKey": "Off"
+    }
+  },
+  {
+    "nameWithoutHash": "ANISOTROPIC_LEVEL",
+    "localizationKey": "AnisotropicQuality",
+    "group": "Graphics",
+    "valueConverter": {
+      "$type": "SettingsManager.Converters.DictionaryValueConverter, SettingsManager",
+      "variants": {
+        "0": "Disabled",
+        "1": "Normal2",
+        "2": "High2"
+      }
+    }
+  },
+  {
+    "nameWithoutHash": "VSYNC",
+    "localizationKey": "VSync",
+    "group": "Graphics",
+    "valueConverter": {
+      "$type": "SettingsManager.Converters.DictionaryValueConverter, SettingsManager",
+      "variants": {
+        "0": "Disabled",
+        "1": "EveryFrame",
+        "2": "EverySecondFrame"
+      }
+    }
+  },
+  {
+    "nameWithoutHash": "CARTRIDGE_CASE_AMOUNT",
+    "localizationKey": "CartridgeCaseAmount",
+    "group": "Graphics",
+    "valueConverter": {
+      "$type": "SettingsManager.Converters.DictionaryValueConverter, SettingsManager",
+      "fallbackOnNotFound": true,
+      "variants": {
+        "0": "Default",
+        "1": "30",
+        "2": "60",
+        "3": "90",
+        "4": "120",
+        "5": "150"
+      }
+    }
+  },
+  {
+    "nameWithoutHash": "AMBIENT_OCCLUSION_MODE",
+    "localizationKey": "AmbientOcclusionMode",
+    "group": "Graphics",
+    "valueConverter": {
+      "$type": "SettingsManager.Converters.BooleanValueConverter, SettingsManager",
+      "trueLocalizationKey": "Enabled",
+      "falseLocalizationKey": "Disabled"
+    }
+  },
+  {
+    "nameWithoutHash": "BLOOM_MODE",
+    "localizationKey": "BloomMode",
+    "group": "Graphics",
+    "valueConverter": {
+      "$type": "SettingsManager.Converters.BooleanValueConverter, SettingsManager",
+      "trueLocalizationKey": "Enabled",
+      "falseLocalizationKey": "Disabled"
+    }
+  },
+  {
+    "nameWithoutHash": "CHROMATIC_ABERRATION_MODE",
+    "localizationKey": "ChromaticAberrationMode",
+    "group": "Graphics",
+    "valueConverter": {
+      "$type": "SettingsManager.Converters.BooleanValueConverter, SettingsManager",
+      "trueLocalizationKey": "Enabled",
+      "falseLocalizationKey": "Disabled"
+    }
+  },
+  {
+    "nameWithoutHash": "GRAIN_MODE",
+    "localizationKey": "GrainMode",
+    "group": "Graphics",
+    "valueConverter": {
+      "$type": "SettingsManager.Converters.BooleanValueConverter, SettingsManager",
+      "trueLocalizationKey": "Enabled",
+      "falseLocalizationKey": "Disabled"
+    }
+  },
+  {
+    "nameWithoutHash": "VIGNETTE_MODE",
+    "localizationKey": "VignetteMode",
+    "group": "Graphics",
+    "valueConverter": {
+      "$type": "SettingsManager.Converters.BooleanValueConverter, SettingsManager",
+      "trueLocalizationKey": "Enabled",
+      "falseLocalizationKey": "Disabled"
+    }
+  },
+  {
+    "nameWithoutHash": "MOUSE_SENSIVITY",
+    "localizationKey": "MouseSensitivity",
+    "group": "Controls",
+    "valueConverter": {
+      "$type": "SettingsManager.Converters.FloatValueConverter, SettingsManager"
+    }
+  },
+  {
+    "nameWithoutHash": "MOUSE_CONTROL_ALLOWED",
+    "localizationKey": "MouseControlAllowed",
+    "group": "Controls",
+    "valueConverter": {
+      "$type": "SettingsManager.Converters.BooleanValueConverter, SettingsManager",
+      "trueLocalizationKey": "Enabled",
+      "falseLocalizationKey": "Disabled"
+    }
+  },
+  {
+    "nameWithoutHash": "MOUSE_VERTICAL_INVERTED",
+    "localizationKey": "MouseVerticalInverted",
+    "group": "Controls",
+    "valueConverter": {
+      "$type": "SettingsManager.Converters.BooleanValueConverter, SettingsManager",
+      "trueLocalizationKey": "Yes",
+      "falseLocalizationKey": "No"
+    }
+  },
+  {
+    "nameWithoutHash": "MOVEMENT_CONTROL_INVERTED",
+    "localizationKey": "InvertBackwardMovingControl",
+    "group": "Controls",
+    "valueConverter": {
+      "$type": "SettingsManager.Converters.BooleanValueConverter, SettingsManager",
+      "trueLocalizationKey": "Yes",
+      "falseLocalizationKey": "No"
+    }
+  }
+]
