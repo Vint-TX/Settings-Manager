@@ -152,7 +152,6 @@
         <Compile Include="Json.cs" />
         <Compile Include="IconHelper.cs" />
         <Compile Include="Localization.cs" />
-        <Compile Include="PlayerPrefs.cs" />
         <Compile Include="RegistryUtils.cs" />
         <Compile Include="ResourcesUtils.cs" />
         <Compile Include="Setting.xaml.cs">
