@@ -64,7 +64,7 @@
                     <TextBlock TextAlignment="Center" Margin="0, 0, 0, 10">
                         <Run FontFamily="{StaticResource QuadratGroteskBold}">Settings Manager for Tanki X</Run>
                         <LineBreak />
-                        Version 1.0
+                        Version 1.1
                     </TextBlock>
 
                     <TextBlock Margin="0, 0, 0, 10">Developer: C6OI</TextBlock>
@@ -89,7 +89,7 @@
                         </Viewbox>
                         <TextBlock VerticalAlignment="Center">
                             <Hyperlink FontFamily="{StaticResource QuadratGroteskBold}" FontSize="24"
-                                       Foreground="#B6FF16" NavigateUri="https://vint-official.site/"
+                                       Foreground="#B6FF16" NavigateUri="https://vint.win/"
                                        RequestNavigate="Hyperlink_OnRequestNavigate">
                                 Join to Vint!
                             </Hyperlink>
